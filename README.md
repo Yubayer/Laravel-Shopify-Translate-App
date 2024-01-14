@@ -1,66 +1,16 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center">Assignment 2, Mod 10, Translate App</p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## ENV Variable
+SHOPIFY_APP_NAME=Translator
+SHOPIFY_API_VERSION=2024-01
+SHOPIFY_API_KEY=
+SHOPIFY_API_SECRET=
+SHOPIFY_API_SCOPES=write_files,read_files,write_locales,read_locales,read_shopify_payments_provider_accounts_sensitive,read_order_submission_rules,write_order_submission_rules,read_gates,write_gates,read_fulfillment_constraint_rules,write_fulfillment_constraint_rules,read_delivery_customizations,write_delivery_customizations,read_customer_merge,write_customer_merge,read_customer_data_erasure,write_customer_data_erasure,read_custom_fulfillment_services,write_custom_fulfillment_services,read_companies,write_companies,read_cart_transforms,write_cart_transforms,read_all_checkout_completion_target_customizations,write_all_checkout_completion_target_customizations,read_all_cart_transforms,read_translations,write_translations,read_third_party_fulfillment_orders,write_third_party_fulfillment_orders,read_themes,write_themes,read_store_credit_account_transactions,read_content,write_content,read_shopify_payments_payouts,read_shopify_payments_disputes,write_shopify_payments_disputes,read_shopify_payments_bank_accounts,read_shopify_payments_accounts,read_markets,write_markets,read_shopify_credit,write_shopify_credit,read_shipping,write_shipping,read_script_tags,write_script_tags,read_channels,write_channels,read_returns,write_returns,read_resource_feedbacks,write_resource_feedbacks,read_reports,write_reports,read_purchase_options,write_purchase_options,read_publications,write_publications,read_products,write_products,read_product_listings,write_product_listings,read_product_feeds,write_product_feeds,read_price_rules,write_price_rules,write_pixels,read_pixels,read_payment_terms,write_payment_terms,read_payment_customizations,write_payment_customizations,read_packing_slip_templates,write_packing_slip_templates,read_orders,write_orders,read_order_edits,write_order_edits,read_online_store_pages,write_online_store_pages,read_online_store_navigation,read_analytics,write_assigned_fulfillment_orders,read_assigned_fulfillment_orders,read_customer_events,write_custom_pixels,read_custom_pixels,write_discounts,read_discounts,write_discovery,read_discovery,write_draft_orders,read_draft_orders,write_fulfillments,read_fulfillments,read_gdpr_data_request,write_gift_cards,read_gift_cards,write_inventory,read_inventory,write_legal_policies,read_legal_policies,write_locations,read_locations,write_marketing_events,read_marketing_events,write_merchant_managed_fulfillment_orders,read_merchant_managed_fulfillment_orders,write_metaobject_definitions,read_metaobject_definitions,write_metaobjects,read_metaobjects,write_online_store_navigation
 
-## About Laravel
+## How To Use
+This app is basically built using app embeds block extension.  The app can be used in two ways. First, this code [<div id="google_translate_element"></div>] can be used anywhere in the store.  Secondly, by turning on the show translate widget option from the app customization option, it can be used in the left or right position at the bottom of the page. The value of the left right and bottom position can be changed from the customization of the app.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+![image](https://github.com/Yubayer/Laravel-Shopify-Translate-App/assets/107784118/dd254df4-fd05-45b4-82cb-13bf65e31c4e)
