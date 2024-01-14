@@ -1,0 +1,112 @@
+{% if block.settings.show_translate %}
+  <style>
+    #google_translate_element {
+      position: fixed;
+      {% if block.settings.position == 'left' %}
+        left: {{ block.settings.left_align | append: 'px' }};
+      {% else %}
+        right: {{ block.settings.right_align | append: 'px' }};
+      {% endif %}
+      bottom: {{ block.settings.bottom_align | append: 'px' }};
+      z-index: 9999;
+    }
+   
+  </style>
+
+
+  <div id="google_translate_element"></div>
+{% endif %}
+
+<style>
+  body{
+    top: 0 !important;
+  }
+  .skiptranslate iframe {
+    visibility: hidden !important;
+    display: none !important;
+  }
+  #google_translate_element span{
+    display: none;
+  }
+  #google_translate_element *:not(select,option) {
+    font-size: 0px;
+  }
+</style>
+
+
+
+<script type="text/javascript">
+  if(document.getElementById('google_translate_element')) {
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en', 
+        gaTrack: true
+      }, 'google_translate_element');
+    }
+  }
+
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+{% schema %}
+{
+  "name": "Translate",
+  "target": "body",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_translate",
+      "label": "Show Translate widget",
+      "default": false
+    },    
+    {
+      "type": "select",
+      "id": "position",
+      "label": "Position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "range",
+      "id": "bottom_align",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "From Bottom",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "left_align",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "From Left",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "right_align",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "From Right",
+      "default": 16
+    }
+  ]
+}
+{% endschema %}
+
