@@ -18,3 +18,9 @@ This app is basically built using app embeds block extension.  The app can be us
 
 
 ![image](https://github.com/Yubayer/Laravel-Shopify-Translate-App/assets/107784118/dd254df4-fd05-45b4-82cb-13bf65e31c4e)
+
+## Use <div id="google_translate_element"></div>
+![image](https://github.com/Yubayer/Laravel-Shopify-Translate-App/assets/107784118/f42bd8ab-bbac-40d6-960d-35006bc01a03)
+
+![image](https://github.com/Yubayer/Laravel-Shopify-Translate-App/assets/107784118/aa457f2d-a864-4303-bce8-9fcb5af02ff6)
+
